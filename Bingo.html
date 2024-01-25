@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO</title>
+    <style>
+        .game {
+            text-align: center;
+        }
+
+        .grid {
+            display: inline-grid;
+            grid-template-rows: repeat(5, 120px);
+            grid-template-columns: repeat(5, 120px);
+        }
+
+        .grid > * {
+            border: 1px solid #444;
+            line-height: 120px;
+            font-size: 24px;
+        }
+        
+        .message {
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <h1>BINGO</h1>
+        <div class="grid" id="bingoGrid">
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div> 
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+
+            <div class="bingo-cell"></div>     
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+        
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+        
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            <div class="bingo-cell"></div>
+            </div>
+        <div class="message">Click to start</div>
+        <button class="btn-start" onclick="startGameWithVoice()">Start Game with Voice</button>
+
+    </div>
+
+    <script src="Bingo.js"></script>
+</body>
+</html>
